@@ -28,13 +28,13 @@ body {
 .top-red {
   width: 280px;
   height: 235px;
-  background-color: red;
+  background-color: #CC1C0F;
 }
 
 .top-gray {
   width: 310px;
   height: 235px;
-  background-color: lightgray;
+  background-color: #DFE3DC;
 }
 
 /* MIDDLE SECTION */
@@ -50,13 +50,13 @@ body {
 .middle-gray {
   width: 280px;
   height: 135px;
-  background-color: lightgray;
+  background-color: #DFE3DC;
 }
 
 .middle-gray2 {
   width: 310px;
   height: 135px;
-  background-color: lightgray;
+  background-color: #DFE3DC;
 }
 
 /* BOTTOM LEFT SECTION */
@@ -72,7 +72,7 @@ body {
 .bottomleft-yellow {
   width: 75px;
   height: 200px;
-  background-color: yellow;
+  background-color: #D6AE23;
 }
 
 .bottomleft-gray {
@@ -94,7 +94,7 @@ body {
 .right-blue {
   width: 160px;
   height: 165px;
-  background-color: blue;
+  background-color: #00094F;
 }
 
 .right-gray {
