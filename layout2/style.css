@@ -1,3 +1,96 @@
-h1 {
-  color: rebeccapurple;
+body {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  width: 50vw;
+  height: 75vh;
+  grid-row-gap: .5em;
+  grid-template-rows: .6fr .4fr;
+  background-color: black;
+  grid-template-columns: 100%;
+  grid-template-areas: "top"
+                       "bottom";
+}
+
+/* TOP SECTION */
+
+.top {
+  display: grid;
+  grid-area: top;
+  grid-row-gap: .5em;
+  grid-column-gap: .5em;
+  grid-template-rows: .15fr .55fr .3fr;
+  grid-template-columns: .25fr .75fr;
+  background-color: black;
+  grid-template-areas: "t-black t-red"
+                       "t-gray t-red"
+                       "t-gray t-gray2";
+}
+
+.t-black {
+	grid-area: t-black;
+	background-color: black;
+}
+
+.t-red {
+	grid-area: t-red;
+	background-color: red;
+}
+
+.t-gray {
+	grid-area: t-gray;
+	background-color: antiquewhite;
+}
+
+.t-gray2 {
+	grid-area: t-gray2;
+	background-color: lightgray;
+}
+
+
+/* BOTTOM SECTION */
+
+.bottom {
+  display: grid;
+  grid-area: bottom;
+  grid-gap: .5em;
+  grid-template-rows: .2fr .3fr .5fr;
+  grid-template-columns: .1fr .14fr .56fr .2fr;
+  grid-template-areas: "b-black b-gray b-gray2 b-gray2"
+                       "b-yellow b-gray b-gray2 b-gray2"
+                       "b-yellow b-gray b-offwhite b-blue";
+}
+
+.b-black {
+	grid-area: b-black;
+	background-color: black;
+}
+
+.b-yellow {
+	grid-area: b-yellow;
+	background-color: yellow;
+}
+
+.b-gray {
+	grid-area: b-gray;
+	background-color: lightgray;
+}
+
+.b-gray2 {
+	grid-area: b-gray2;
+	background-color: lightgray;
+}
+
+.b-offwhite {
+	grid-area: b-offwhite;
+	background-color: antiquewhite;
+}
+
+.b-blue {
+	grid-area: b-blue;
+	background-color: blue;
 }
