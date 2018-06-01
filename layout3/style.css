@@ -1,3 +1,101 @@
-h1 {
-  color: rebeccapurple;
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 1fr 2fr;
+	width: 350px;
+	height: 400px;
+	margin: auto auto auto auto;
+
 }
+
+.boxOne{
+	background-color: crimson;
+	border-top: none;
+	border-left: none;
+	border-bottom: 5px solid black;
+	border-right: 3px solid black;
+
+	}
+
+.boxTwo{
+	background-color: gainsboro;
+	border-top: none;
+	border-left: 3px solid black;
+	border-bottom: 5px solid black;
+	border-right: 1px solid darkgrey;
+
+	}
+
+.boxThree{
+	background-color: gainsboro;
+	border-top: 5px solid black;
+	border-left: none;
+	border-bottom: 5px solid black;
+	border-right: 3px solid black;
+	}
+
+.boxFour{
+	background-color: gainsboro;
+	border-top: 5px solid black;
+	border-left: 3px solid black;
+	border-bottom: 5px solid black;
+	border-right: 1px solid darkgrey;
+	}
+
+.boxFive{
+	display: grid;
+	grid-template-columns: 25% 1fr;
+	}
+
+.boxfiveOne{
+	background-color: gold;
+	border-top: 5px solid black;
+	border-left: none;
+	border-bottom: 1px solid black;
+	border-right: 3px solid black;
+}
+.boxfiveTwo{
+	background-color: gainsboro;
+	border-top: 5px solid black;
+	border-left: 3px solid black;
+	border-bottom: 1px solid black;
+	border-right: 3px solid black;
+}
+
+.boxSix{
+	display: grid;
+	grid-template-columns: 60% 1fr;
+	
+	}
+
+	.boxSixOne{
+		display: grid;
+		grid-template-rows: 75% 1fr;
+	}
+		.boxSixOneOne{
+		background-color: darkblue;
+		border-top: 3px solid black;
+		border-left: 3px solid black;
+		border-bottom: 3px solid black;
+		border-right: 3px solid black;
+		}
+		.boxSixOneTwo{
+		background-color: gainsboro;
+		border-top: 3px solid black;
+		border-left: 3px solid black;
+		border-bottom: 1px solid darkgrey;
+		border-right: 3px solid black;
+		}
+
+	.boxSixTwo{
+	background-color: gainsboro;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: 1px solid darkgrey;
+	border-right: 1px solid darkgrey;
+}
+
+
+
+
+

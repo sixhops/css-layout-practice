@@ -1,3 +1,78 @@
-h1 {
-  color: rebeccapurple;
+.wrapper{
+	display: grid;
+	grid-template-columns: 20% 1fr;
+	grid-template-rows: 1fr 25%;
+	width: 375px;
+	height: 390px;
+	margin: auto auto auto auto;
+
+}
+
+.boxOne{
+	display: grid;
+	grid-template-rows: 45% 1fr; 
+
+	}
+.boxOneOne{
+	background-color: #FFFFF0;
+	border-top: none;
+	border-left: none;
+	border-bottom: 5px solid black;
+	border-right: 3px solid black;
+
+}
+
+.boxOneTwo{
+	background-color: #FFFFF0;
+	border-top: 5px solid black;
+	border-left: none;
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+}
+
+.boxTwo{
+	background-color: #B22222;
+	border-top: none;
+	border-left: 3px solid black;
+	border-bottom: 5px solid black;
+	border-right: 1px solid darkgrey;
+
+	}
+
+.boxThree{
+	background-color: darkblue;
+	border-top: 3px solid black;
+	border-left: none;
+	border-bottom: none;
+	border-right: 3px solid black;
+	}
+
+.boxFour{
+	display: grid;
+	grid-template-columns: 90% 1fr;
+	}
+.boxFourOne{
+	background-color: #FFFFF0;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: none;
+	border-right: 3px solid black;
+	}
+.boxFourTwo{
+	display: grid;
+	grid-template-rows: 45% 1fr; 
+}
+.boxFourTwoOne{
+	background-color: #FFFFF0;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black
+	border-right: 1px solid darkgrey;
+}
+.boxFourTwoTwo{
+	background-color: gold;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: none;
+	border-right: 1px solid darkgrey;
 }
