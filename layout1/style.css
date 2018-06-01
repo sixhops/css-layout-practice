@@ -1,3 +1,89 @@
-h1 {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rebeccapurple;
+  margin: auto;
+  text-align: center;
+}
+
+/*Steve's Code*/
+#composition {
+  width: 40%;
+  margin: auto;
+  min-height: 75vh;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 8em;
+  grid-template-areas: "left right";
+  border: 1px solid black;
+  background-color: black;
+}
+
+#left {
+  grid-area: left;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 1fr 9em;
+  grid-template-columns: 100%;
+  grid-template-areas: "l-top"
+                       "l-bottom";
+}
+#right {
+  grid-area: right;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 9em 1fr 2em;
+  grid-template-columns: 100%;
+  grid-template-areas: "r-top"
+                        "r-mid"
+                        "r-bottom";
+}
+
+#r-top {
+  grid-area: r-top;
+  background-color: #222;
+}
+#r-mid {
+  grid-area: r-mid;
+  background-color: white;
+}
+#r-bottom {
+  grid-area: r-bottom;
+  background-color: red;
+}
+
+#l-top {
+  grid-area: l-top;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 4em 0.5fr 0.5fr;
+  grid-template-columns: 2em 0.5fr 0.5fr;
+  grid-template-areas: "lt-topleft lt-topleft lt-topright"
+                       "lt-sidetop lt-main lt-main"
+                       "lt-sidebottom lt-main lt-main"
+}
+#l-bottom {
+  grid-area: l-bottom;
+  background-color: white;
+}
+
+#lt-topleft {
+  grid-area: lt-topleft;
+  background-color: white;
+}
+#lt-topright {
+  grid-area: lt-topright;
+  background-color: yellow;
+}
+#lt-sidetop {
+  grid-area: lt-sidetop;
+  background-color: white;
+}
+#lt-sidebottom {
+  grid-area: lt-sidebottom;
+  background-color: blue;
+}
+#lt-main {
+  grid-area: lt-main;
+  background-color: white;
 }
