@@ -102,4 +102,32 @@ h1 {
 	background-color: #d1c5c5;
 	flex: 1;
 	border-top: 1em solid black;
+	display: flex;
 }
+
+
+.r3-1 {
+	background-color: #d1c3c2;
+	flex: 2.4;
+}
+
+.r3-2 {
+	background-color: #080b4e;
+	flex: 1;
+	border-left: 1em solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
