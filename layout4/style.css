@@ -1,3 +1,73 @@
-h1 {
-  color: rebeccapurple;
+.wrapper {
+	display: grid;
+	height: 90vh;
+	width: 600px;
+	margin: auto;
+	margin-top: 8%;
+	grid-template-columns: 117px 320px;
+    grid-template-rows: 140px 170px 125px;
+	grid-template-areas: "gray1 red1" 
+						 "gray2 red1" 
+						 "blue1 gray3";
+}
+
+.gray {
+	background-color: #f0f5db;
+	border: 3px solid black;
+}
+	
+.red {
+	background-color: #831901;
+	border: 3px solid black;
+}
+
+.blue {
+	background-color: #0c1a3c;
+	border: 3px solid black;
+}
+
+.yellow {
+	background-color: #d69903;
+	border: 1px solid black;
+}
+
+#box1 {
+	grid-area: gray1;
+	border-bottom: 8px solid black;
+}
+
+#box2 {
+	grid-area: gray2;	
+}
+
+#box3 {
+	grid-area: blue1;
+}
+
+#box4 {
+	grid-area: red1;
+}
+
+#box5 {
+	grid-area: gray3;
+	display: grid;	
+	grid-template-rows: 60px 60px;
+    grid-template-columns: 32px;
+	justify-content: end;
+	grid-template-areas: "gray4"
+						 "yellow1";
+}
+
+#box6 {
+	grid-area: gray4;	
+	border: 0px;
+	border-left: 6px solid black;
+	border-bottom: 5px solid black;
+}
+
+#box7 {
+	grid-area: yellow1;	
+	border: 0px;
+	border-left: 6px solid black;
+	border-top: 5px solid black;
 }
