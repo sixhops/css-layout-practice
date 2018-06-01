@@ -1,3 +1,90 @@
 h1 {
   color: rebeccapurple;
 }
+
+.container {
+  height: 650px;
+  width: 650px;
+  margin: auto;
+  background-color: #e5e0c0;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-areas: "bigleftdiv bigrightdiv";
+  border: 0px;
+}
+
+div {
+  border: 2px solid black;
+}
+
+.bigleftdiv {
+  grid-area: "bigleftdiv";
+  background-color: #e5e0c0;
+  display: grid;
+  grid-template-rows: 220px 270px 1fr;
+  grid-template-areas: "topleft"
+                       "middleleft"
+                       "bottomleft";
+}
+
+.bigrightdiv {
+  grid-area: "bigrightdiv";
+  background-color: #e5e0c0;
+  display: grid;
+  grid-template-rows: 490px 1fr;
+  grid-template-areas: "topright"
+                       "bottomright";
+}
+
+.topright {
+  grid-area: "topright";
+  background-color: darkred;
+
+}
+
+.bottomright {
+  grid-area: "bottomright";
+  background-color: #e5e0c0;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  grid-template-areas: "bottomrightleft bottomrightright";
+}
+
+.bottomrightleft {
+  grid-area: "bottomrightright";
+  background-color: #e5e0c0;
+}
+
+.bottomrighttop {
+  grid-area: "bottomrighttop";
+  background-color: #e5e0c0;
+}
+
+.bottomrightbottom {
+  grid-area: "bottomrightbottom";
+  background-color: darkorange;
+}
+
+.bottomrightright {
+  grid-area: "bottomrightright";
+  background-color: #e5e0c0;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "bottomrighttop"
+                       "bottomrightbottom";
+}
+
+.topleft {
+  grid-area: "topleft";
+  background-color: #e5e0c0;
+}
+
+.middleleft {
+  grid-area: "middleleft";
+  background-color: #e5e0c0;
+}
+
+.bottomleft {
+  grid-area: "bottomleft";
+  background-color: darkblue;
+}
