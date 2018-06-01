@@ -1,3 +1,81 @@
-h1 {
-  color: rebeccapurple;
+
+
+body {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    grid-template-rows: 40px 60px 150px 150px 75px 25px;
+    grid-template-columns: 30px 175px 175px 120px;
+    max-height: 500vh;
+    border: 2px solid black;
+
+    grid-template-areas: "a a b c"
+                          "e d d c"
+                          "e d d h"
+                          "f d d h"
+                          "g g g h"
+                          "g g g i";
+}
+
+.a {
+  grid-area: a;
+  background-color: ivory;
+  border: 3px solid black;
+}
+
+.b {
+  grid-area: b;
+  background-color: yellow;
+  border: 3px solid black;
+
+}
+
+.c {
+  grid-area: c;
+  background-color: black;
+  border: 3px solid black;
+
+}
+
+.d {
+  grid-area: d;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.e {
+  grid-area: e;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.f {
+  grid-area: f;
+  background-color: blue;
+  border: 3px solid black;
+
+}
+
+.g {
+  grid-area: g;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.h {
+  grid-area: h;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.i {
+  grid-area: i;
+  background-color: red;
+  border: 3px solid black;
+
 }

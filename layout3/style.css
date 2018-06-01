@@ -1,3 +1,79 @@
-h1 {
-  color: rebeccapurple;
+
+
+body {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    grid-template-rows: 220px 100px 150px 30px;
+    grid-template-columns: 40px 220px 180px 60px;
+    max-height: 500vh;
+    border: 2px solid black;
+
+    grid-template-areas: "a a b b"
+                          "c c d d"
+                          "e f g h"
+                          "e f i h";
+}
+
+.a {
+  grid-area: a;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.b {
+  grid-area: b;
+  background-color: ivory;
+  border: 2px solid black;
+
+}
+
+.c {
+  grid-area: c;
+  background-color: ivory;
+  border: 2px solid black;
+
+}
+
+.d {
+  grid-area: d;
+  background-color: ivory;
+  border: 2px solid black;
+
+}
+
+.e {
+  grid-area: e;
+  background-color: goldenrod;
+  border: 2px solid black;
+
+}
+
+.f {
+  grid-area: f;
+  background-color: ivory;
+  border: 2px solid black;
+
+}
+
+.g {
+  grid-area: g;
+  background-color: darkblue;
+  border: 2px solid black;
+
+}
+
+.h {
+  grid-area: h;
+  background-color: ivory;
+  border: 2px solid black;
+
+}
+
+.i {
+  grid-area: i;
+  background-color: ivory;
+  border: 2px solid black;
+
 }
