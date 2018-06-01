@@ -1,3 +1,105 @@
-h1 {
-  color: rebeccapurple;
+body {	
+	display: grid;
+	min-height: 100vh;
+	max-width: 450px;
+	grid-template-columns: 100px 1fr;
+	grid-template-rows: 500px 1fr;
+	grid-template-areas: "topleft topright"
+						 "bl br";
+
+}
+
+.topleft {
+	grid-area: topleft;
+	background-color: wheat;
+	border: 2px solid black;
+	display: grid;
+	grid-template-rows: 50px 1fr;
+	grid-template-areas: "toptopleft"
+						 "topleft";
+}
+
+.topright {
+	grid-area: topright;
+	background-color: red;
+	display: grid;
+	grid-template-rows: 300px 1fr;
+	grid-template-columns: 1fr 4px;
+	grid-template-areas: "toptopright toptopright"
+						 "toprightbottomleft toprightbottomright";
+}
+
+.bl {
+	grid-area: bl;
+	background-color: gray;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	display: grid;
+	grid-template-rows: 50px 1fr;
+	grid-template-columns: 25px 1fr;
+	grid-template-areas: "topleftbottom bottomleftright"
+						"bottomleftleft bottomleftright";
+}
+
+.br {
+	grid-area: br;
+	background-color: grey;
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: 1fr 5px;
+	grid-template-areas: "botbotrightleft botbotrightright";
+}
+
+.toptopleft {
+	grid-area: toptopleft;
+	background-color: black;
+	border: 2px solid black;
+}
+
+.topleftbottom {
+	grid-area: topleftbottom;
+	background-color: black;
+	border: 2px solid black;
+}
+
+.bottomleftleft {
+	grid-area: bottomleftleft;
+	background-color: yellow;
+	border-right: 2px solid black;
+}
+
+.bottomleftright {
+	grid-area: bottomleftright;
+	background-color: lightgray;
+}
+
+.botbotrightright {
+	grid-area: botbotrightright;
+	background-color: lightgray;
+	border-left: 2px solid black;
+}
+
+.botbotrightleft {
+	grid-area: botbotrightleft;
+	background-color: lightgray;
+	border: 2px solid black;
+}
+
+.toptopright {
+	grid-area: toptopright;
+	background-color: red;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.toprightbottomleft {
+	grid-area: toprightbottomleft;
+	background-color: grey;
+}
+
+.toprightbottomright {
+	grid-area: toprightbottomleft;
+	background-color: lightgray;
+	border-left: 2px solid black;
 }
