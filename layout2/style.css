@@ -1,3 +1,121 @@
-h1 {
-  color: rebeccapurple;
+.wrapper {
+	display: grid;
+	height: 90vh;
+	width: 600px;
+	margin: auto;
+	margin-top: 5%;
+	grid-template-columns: 100px 275px;
+    grid-template-rows: 600px;
+	grid-template-areas: "black1 red1";
+}
+
+.black {
+	background-color: #040205;
+}
+
+.red {
+	background-color: #e10206;
+}
+
+.lightgray {
+	background-color: #eceeeb;
+}
+
+.gray {
+	background-color: #cdccd4;
+}
+
+.yellow {
+	background-color: #fbfa53;
+}
+
+.blue {
+	background-color: #060854;
+}
+
+.box1 {
+	border: 1px solid black;
+	grid-area: black1;
+	border-right: 7px solid black;
+	display: grid;
+	align-content: end;
+	grid-template-columns: 30px 70px;
+    grid-template-rows: 290px 40px 220px;
+	grid-template-areas: "gray2 gray2"
+						 "black2 gray3"
+						 "yellow1 gray3";
+}
+
+.box2 {
+	border: 1px solid black;
+	grid-area: red1;
+	display: grid;
+	align-content: end;
+	grid-template-columns: 195px 70px 9px;
+    grid-template-rows: 120px 140px 120px;
+	grid-template-areas: "gray4 gray4 gray6"
+						 "gray5 gray5 gray6"
+						 "gray7 blue1 blue1";
+
+}
+
+.box3 {
+	border: 1px solid black;
+	grid-area: gray2;
+	border-right: 7px solid black;
+}
+
+.box4 {
+	border: 1px solid black;
+	grid-area: black2;
+	border-right: 7px solid black;
+	border-top: 7px solid black;
+}
+
+.box5 {
+	border: 1px solid black;
+	grid-area: yellow1;
+	border-right: 7px solid black;
+}
+
+.box6 {
+	border: 1px solid black;
+	grid-area: gray3;
+	border-right: 7px solid black;
+	border-top: 7px solid black;
+}
+
+.box7 {
+	border: 1px solid black;
+	grid-area: gray4;
+	border-right: 7px solid black;
+	border-top: 7px solid black;
+}
+
+.box8 {
+	border: 1px solid black;
+	grid-area: gray5;
+	border-right: 7px solid black;
+	border-top: 7px solid black;
+}
+
+.box9 {
+	border: 1px solid black;
+	grid-area: gray6;
+	border-top: 7px solid black;
+}
+
+.box10 {
+	border: 1px solid black;
+	grid-area: gray7;
+	border-bottom: 7px solid black;
+	border-top: 7px solid black;
+	border-right: 7px solid black;
+}
+
+.box11 {
+	border: 1px solid black;
+	grid-area: blue1;
+	border-bottom: 7px solid black;
+	border-top: 7px solid black;
 }

@@ -1,3 +1,98 @@
-h1 {
-  color: rebeccapurple;
+.wrapper {
+	display: grid;
+	height: 90vh;
+	width: 600px;
+	margin: auto;
+	margin-top: 5%;
+	grid-template-columns: 400px 100px;
+    grid-template-rows: 580px;
+	grid-template-areas: "gray1 black1";
+}
+
+.gray {
+	background-color: #dde0df;
+}
+
+.yellow {
+	background-color: #e4e795;
+}
+
+.black {
+	background-color: #2a2a28;
+}
+
+.blue {
+	background-color: #22469b;
+}
+
+.orange {
+	background-color: #d34718;
+}
+
+.box1 {
+	grid-area: gray1;
+	border: 1px solid black;
+	border-right: 5px solid black;
+	display: grid;
+	grid-template-rows: 60px 200px 180px;
+	grid-template-columns: 30px 185px 180px;
+	grid-template-areas: "gray3 gray3 yellow1"
+						 "gray5 gray4 gray4"
+						 "blue1 gray4 gray4"; 
+}
+
+.box5 {
+	grid-area: gray3;
+	border: 1px solid black;
+	border-bottom: 10px solid black;
+	border-right: 10px solid black;
+}
+
+.box6 {
+	grid-area: yellow1;
+	border: 1px solid black;
+	border-bottom: 10px solid black;
+}
+
+.box7 {
+	grid-area: gray4;
+	border: 1px solid black;
+	border-bottom: 10px solid black;
+}
+
+.box8 {
+	grid-area: blue1;
+	border: 1px solid black;
+	border-bottom: 10px solid black;
+	border-right: 10px solid black;
+	border-top: 10px solid black;
+}
+
+.box9 {
+	grid-area: gray5;
+	border: 1px solid black;
+	border-right: 10px solid black;
+}
+
+.box2 {
+	grid-area: black1;
+	border: 1px solid black;
+	border-left: 5px solid black;
+	display: grid;
+	align-content: end;
+	grid-template-rows: 440px 25px;
+	grid-template-areas: "gray2" 
+					     "orange1";
+}
+
+.box3 {
+	grid-area: gray2;
+	border: 1px solid black;
+	border-top: 10px solid black;
+}
+
+.box4 {
+	grid-area: orange1;
+	border: 1px solid black;
+	border-top: 10px solid black;
 }
