@@ -10,8 +10,6 @@ body {
 
 .grid-container {
 	display: grid;
-	height: 600px;
-	width: 600px;
 	grid-template-rows: 75px 400px 125px;
 	grid-template-columns: 50px 425px 125px;
 	grid-template-areas: "top top right"
@@ -60,7 +58,6 @@ body {
 	height: 190px;
 	background-color: blue;
 }
-
 
 /* MIDDLE SECTION */
 
