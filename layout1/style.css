@@ -1,3 +1,113 @@
-h1 {
-  color: rebeccapurple;
+/*Make art 600px x 600px */
+
+body {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
 }
+
+.grid-container {
+	display: grid;
+	height: 600px;
+	width: 600px;
+	grid-template-rows: 75px 400px 125px;
+	grid-template-columns: 50px 425px 125px;
+	grid-template-areas: "top top right"
+											 "left middle right"
+											 "bottom bottom right";
+}
+
+/* TOP SECTION */
+.top {
+	grid-area: top;
+	display:flex;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.top-gray {
+	width: 230px;
+	height: 60px;
+	background-color: lightgray;
+}
+
+.top-yellow {
+	width: 230px;
+	height: 60px;
+	background-color: yellow;
+}
+
+/* LEFT SECTION */
+.left {
+	grid-area: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.left-gray {
+	width: 35px;
+	height: 190px;
+	background-color: lightgray;
+}
+
+.left-blue {
+	width: 35px;
+	height: 190px;
+	background-color: blue;
+}
+
+
+/* MIDDLE SECTION */
+
+.middle {
+	grid-area: middle;
+	background-color: lightgray;
+}
+
+/* RIGHT SECTION */
+.right {
+	grid-area: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.right-black {
+	width: 110px;
+	height: 140px;
+	background-color: #222;
+}
+
+.right-gray {
+	width: 110px;
+	height: 380px;
+	background-color: lightgray;
+}
+
+.right-red {
+	width: 110px;
+	height: 40px;
+	background-color: red;
+}
+
+/* BOTTOM SECTION */
+.bottom {
+	grid-area: bottom;
+	display: flex;
+	align-items: flex-end;
+	background-color: black;
+}
+
+.bottom-gray {
+	width: 475px;
+	height: 110px;
+	background-color: #222;
+}
+
