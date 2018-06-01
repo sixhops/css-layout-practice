@@ -1,3 +1,114 @@
 h1 {
   color: rebeccapurple;
 }
+
+.container {
+  width: 650px;
+  height: 650px;
+  margin: auto;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-rows: 300px 150px 1fr;
+  grid-template-areas: "bigtopdiv"
+                       "bigmiddlediv"
+                       "bigbottomdiv";
+  border: 0px;
+}
+
+div {
+  border: 2px solid black;
+}
+
+.bigtopdiv {
+  grid-area: "bigtopdiv";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  grid-template-areas: "topleft topright";
+}
+
+.topleft {
+  grid-area: "topleft";
+  background-color: red;
+}
+
+.topright {
+  grid-area: "topright";
+  background-color: lightgrey;
+}
+
+.bigmiddlediv {
+  grid-area: "bigmiddlediv";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  grid-template-areas: "middleleft middleright";
+}
+
+.middleleft {
+  grid-area: "middleleft";
+  background-color: lightgrey;
+}
+
+.middleright {
+  grid-area: "middleright";
+  background-color: lightgrey;
+}
+
+.bigbottomdiv {
+  grid-area: "bigbottomdiv";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  grid-template-areas: "bottomleft bottomright";
+}
+
+.bottomleft {
+  grid-area: "bottomleft";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-areas: "bottomleft1 bottomleft2";
+}
+
+.bottomleft1 {
+  grid-area: "bottomleft1";
+  background-color: yellow;
+}
+
+.bottomleft2 {
+  grid-area: "bottomleft2";
+  background-color: lightgrey;
+}
+
+.bottomright {
+  grid-area: "bottomright";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "bottomrightleft bottomrightright";
+}
+
+.bottomrightleft {
+  grid-area: "bottomrightleft";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-rows: 160px 1fr;
+  grid-template-areas: "bottomlefttop"
+                       "bottomleftbottom";
+}
+
+.bottomlefttop {
+  grid-area: "bottomlefttop";
+  background-color: darkblue;
+}
+
+.bottomleftbottom {
+  grid-area: "bottomleftbottom";
+  background-color: lightgrey;
+}
+
+.bottomrightright {
+  grid-area: "bottomrightright";
+  background-color: lightgrey;
+}

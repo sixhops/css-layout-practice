@@ -1,3 +1,117 @@
 h1 {
   color: rebeccapurple;
 }
+
+div {
+  border: 2px solid black;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "bigleftdiv bigrightdiv";
+  grid-template-columns: 1fr 100px;
+}
+
+.bigleftdiv {
+  display: grid;
+  grid-area: bigleftdiv;
+  background-color: lightgrey;
+  grid-template-areas: "topleftdiv"
+                       "middleleftdiv"
+                       "bottomleftdiv";
+  grid-template-rows: 45px 1fr 110px;
+}
+
+.topleftdiv {
+  grid-area: "topleftdiv";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-areas: "supertopleft1 supertopleft2";
+  grid-template-columns: 200px 1fr;
+}
+
+.supertopleft1 {
+  grid-area: "supertopleft1";
+  background-color: lightgrey;
+}
+
+.supertopleft2 {
+  grid-area: "supertopleft2";
+  background-color: yellow;
+}
+
+/* .middleleftdiv {
+  grid-area: "middleleftdiv";
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-areas: "leftleftdiv"
+                       "leftrightdiv";
+  grid-template-columns: 100px 1fr;
+} */
+
+.middleleftdiv {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas: "leftleftdiv leftrightdiv";
+}
+
+.leftleftdiv {
+  grid-area: "leftleftdiv";
+  background-color: lightgrey;
+  display: grid;
+  grid-template-rows: 175px 1fr;
+  grid-template-areas: "superleftdiv1"
+                      "superleftdiv2";
+}
+
+.leftrightdiv {
+  grid-area: "leftrightdiv";
+  background-color: lightgrey;
+}
+
+.superleftdiv1 {
+  grid-area: "superleftdiv1";
+  background-color: lightgrey;
+}
+
+.superleftdiv2 {
+  grid-area: "superleftdiv2";
+  background-color: blue;
+}
+
+.bottomleftdiv {
+  grid-area: "bottomleftdiv";
+  background-color: lightgrey;
+}
+
+.bigrightdiv {
+  display: grid;
+  grid-area: bigrightdiv;
+  background-color: lightgrey;
+  grid-template-areas: "toprightdiv"
+                       "middlerightdiv"
+                       "bottomrightdiv";
+  grid-template-rows: 120px 1fr 30px;
+}
+
+.toprightdiv {
+  grid-area: toprightdiv;
+  background-color: #393b3f;
+}
+
+.middlerightdiv {
+  grid-area: middlerightdiv;
+  background-color: lightgrey;
+}
+
+.bottomrightdiv {
+  grid-area: bottomrightdiv;
+  background-color: red;
+}
+
+.container {
+  border: 0px;
+}
