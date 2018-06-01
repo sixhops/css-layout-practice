@@ -1,81 +1,51 @@
-body {
+.container {
   display: grid;
-  grid-template-rows: 1fr 50px;
-  min-height: 100vh;
-  grid-template-areas: "content"
-                       "footer";
-}
-
-header {
-  grid-area: header;
+  grid-gap: 1em;
+  grid-template-rows: 13em 13em .5fr .5fr;
+  min-height: 75vh;
+  grid-template-columns: 8em 1fr 2em;
+  grid-template-areas:
+                       "topleft bigred bigred"
+                       "midleft bigred bigred"
+                       "bottomleft bottommid brt"
+                       "bottomleft bottommid brb";
+  height: 500px;
   background-color: black;
-  width: 50px;
+  width: 40%;
 }
 
-main {
-  grid-area: content;
+.topleft {
+  grid-area: topleft;
   background-color: beige;
-  width: 300px;
 }
 
-.leftMiddle {
-  border-bottom: 25px solid black;
-  width: 300px;
-  height: 400px;
-  float: left;
-  margin-left: 0;
-}
-
-footer {
-  grid-area: footer;
-  background-color: beige;
-  height: 200px;
-  border-top: 25px solid black;
-}
-
-aside {
-  grid-area: sidebar;
+.bigred {
+  grid-area: bigred;
   background-color: darkred;
-  width: 1150px;
 }
 
-div {
-	height: 85px;
-	width: 60px;
-	margin-left: 1420px;
-	border: 10px solid black;
+.midleft {
+  grid-area: midleft;
+  background-color: beige;
 }
 
-.leftFoot {
-  float: left;
-  margin-left: 0;
-  height: 180px;
-  width: 291px;
-  border-top: 3px solid black;
-  border-right: 49px solid black;
+.bottomleft {
+	grid-area: bottomleft;
   background-color: darkblue;
 }
 
-.topFoot {
-	background-color: beige;
-	color: beige;
-  border-top: 1px solid black;
-  border-left: 15px solid black;
+.bottommid {
+  grid-area: bottommid;
+  background-color: beige;
 }
 
-.bottomFoot {
+.brt {
+  grid-area: brt;
+  background-color: beige;
+}
+
+.brb {
+  grid-area: brb;
 	background-color: gold;
-	color: gold;
-  border-left: 15px solid black;
 }
 
-/*this is for any display above 37.5em i.e.desktop*/
-@media (min-width: 37.5em) {
-  body {
-    grid-template-columns: 1fr 50px 1fr;
-    grid-template-areas:
-                        "content header sidebar"
-                       "footer   footer footer"; 
-    height: 500px;
-  }
-}
