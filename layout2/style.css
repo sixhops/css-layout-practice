@@ -1,3 +1,138 @@
-h1 {
-  color: rebeccapurple;
+.frame {
+  display: flex;
+  width: 500px;
+  height: 809px;
+  background-color: #d6dad9;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  width: 34px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 57px;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  border-left: 12px solid #151712;
+}
+
+.column4 {
+  display: flex;
+  flex-direction: column;
+  width: 67px;
+}
+
+.column5 {
+  display: flex;
+  flex-direction: column;
+  width: 19px;
+}
+
+.col1row1 {
+  height: 32px;
+  background-color: #151712;
+  border-bottom: 12px solid #151712;
+}
+
+.col1row2 {
+  height: 402px;
+  border-bottom: 12px solid #151712;
+}
+
+.col1row3 {
+  height: 27px;
+  background-color: #1c1a1d;
+  border-bottom: 12px solid #151712;
+}
+
+.col1row4 {
+  height: 312px;
+  background-color: #fbfa62;
+}
+
+.col2row1 {
+  height: 32px;
+  background-color: #151712;
+  border-bottom: 12px solid #151712;
+}
+
+.col2row2 {
+  height: 402px;
+  border-bottom: 12px solid #151712;
+}
+
+.col2row3 {
+  height: 351px;
+  border-left: 12px solid #151712;
+}
+
+.col3row1 {
+  height: 298px;
+  background-color: #e44c11;
+  border-bottom: 12px solid #151712;
+}
+
+.col3row2 {
+  height: 134px;
+  border-bottom: 12px solid #151712;
+}
+
+.col3row3 {
+  height: 165px;
+  border-bottom: 12px solid #151712;
+}
+
+.col3row4 {
+  height: 165px;
+  border-bottom: 12px solid #151712;
+}
+
+.col4row1 {
+  height: 298px;
+  background-color: #e44c11;
+  border-bottom: 12px solid #151712;
+}
+
+.col4row2 {
+  height: 134px;
+  border-bottom: 12px solid #151712;
+}
+
+.col4row3 {
+  height: 165px;
+  border-bottom: 12px solid #151712;
+}
+
+.col4row4 {
+  height: 165px;
+  border-left: 12px solid #151712;
+  background-color: #0c0e5b;
+  border-bottom: 12px solid #151712;
+}
+
+.col5row1 {
+  height: 298px;
+  background-color: #e44c11;
+  border-bottom: 12px solid #151712;
+  border-right: 12px solid #151712;
+}
+
+.col5row2 {
+  height: 314px;
+  border-left: 8px solid #151712;
+  border-bottom: 12px solid #151712;
+}
+
+.col5row3 {
+  height: 165px;
+  background-color: #0c0e5b;
+  border-bottom: 12px solid #151712;
 }
