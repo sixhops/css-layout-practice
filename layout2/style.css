@@ -1,3 +1,102 @@
-h1 {
-  color: rebeccapurple;
+/* tableau I palette */
+.yellow {
+  background-color: #F9F673;
+}
+.red {
+  background-color: #DE0C19;
+}
+.blue {
+  background-color: #080E54;
+}
+
+.gray {
+  background-color: #CED3D9;
+}
+.other-gray {
+  background-color: #F1F3F0;
+}
+
+#container {
+  background-color: #000;
+  width: 40%;
+  margin: 10em auto;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows:  0.4fr 0.2fr 0.25fr 0.15fr;
+  grid-template-columns: 0.25fr .7fr 0.05fr; 
+  grid-template-areas:  "left-top right-top right-top"
+                        "left-top right-mid-top right-mid-right"
+                        "left-bottom right-mid-bottom right-mid-right"
+                        "left-bottom right-bottom right-bottom";
+}
+
+#left-top {
+  grid-area: left-top;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+}
+
+#top-black-chunk {
+  background-color: black;
+  width: 100%;
+  height: 5em;
+}
+
+#left-bottom {
+  grid-area: left-bottom;
+}
+
+#lb-container {
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-rows: 0.1fr 0.9fr;
+  grid-template-areas: "lb-black-chunk lb-right"
+                       "lb-left lb-right";
+}
+
+#lb-black-chunk {
+  grid-area: lb-black-chunk;
+  background-color: #0C070B;
+}
+
+#lb-left {
+  grid-area: lb-left;
+}
+
+#lb-right {
+  grid-area: lb-right;
+  border-left: 1em solid black;
+}
+
+#right-top {
+  grid-area: right-top;
+}
+
+#right-mid-top {
+  grid-area: right-mid-top;
+}
+
+#right-mid-bottom {
+  grid-area: right-mid-bottom;
+}
+
+#right-mid-right {
+  grid-area: right-mid-right;
+}
+
+#right-bottom {
+  border-bottom: 1em solid black;
+  grid-area: right-bottom;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#blue-chunk {
+  width: 8em;
+  border-left: 1em solid black;
 }

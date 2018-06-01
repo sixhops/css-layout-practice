@@ -1,3 +1,124 @@
-h1 {
-  color: rebeccapurple;
+/* tableau II palette */
+.yellow {
+  background-color: #E4E89B
+}
+.red {
+  background-color: #DF481C;
+}
+.blue {
+  background-color: #2F4D99;
+}
+
+.gray {
+  background-color: #D9DDDB;
+}
+
+.dark-gray {
+  background-color: #2C2C2C;
+}
+
+/* CONTAINER */
+
+#container {
+  width: 70%;
+  margin: 10em auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.7fr .3fr; 
+  grid-template-areas:  "left-panel right-panel";
+  
+}
+
+/* GRID PANELS */
+
+#left-panel {
+  grid-area: left-panel;
+  
+}
+
+#right-panel {
+  grid-area: right-panel;
+  border-left: 1em solid black;
+}
+
+/* LEFT SIDE STACK */
+
+#top-double-container {
+  background-color: #000;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-direction: row;
+}
+/* top */
+.top-double {
+  width: 50%;
+  height: 90%;
+  border-bottom: 1em solid black;
+}
+
+.top-double:first-child {
+  border-right: 1em solid black;
+}
+/* middle and bottom */
+#left-stack-container {
+  height: 85%;
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  grid-template-rows: 0.4fr 0.35fr 0.25fr;
+  grid-template-areas: "left-left-top left-right"
+                       "left-left-mid left-right"
+                       "left-bottom left-bottom";
+}
+
+#left-left-top {
+  grid-area: left-left-top;
+}
+
+#left-left-mid {
+  grid-area: left-left-mid;
+  border-top: 1em solid black;
+}
+
+#left-right {
+  grid-area: left-right;
+  border-left: 1em solid black;
+}
+
+#left-bottom {
+  grid-area: left-bottom;
+  border-top: 1em solid black;
+}
+
+/* RIGHT SIDE STACK */
+
+#right-stack-container {
+  height: 100%;
+  width: 100%;
+  background: #D9DDDB;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  
+}
+
+#right-top {
+  /* background-color: #2C2C2C; */
+  height: 30%;
+  width: 100%;
+  border-bottom: 1em solid black;
+}
+
+#right-mid {
+  /* background-color: #D9DDDB; */
+  height: 60%;
+}
+
+#right-bottom {
+  /* background-color: #DF481C; */
+  height:10%;
+  border-top: 1em solid black;
 }
