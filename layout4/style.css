@@ -3,5 +3,47 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: auto;
   text-align: center;
+  background-color: black;
 }
 
+.container {
+  display: grid;
+  grid-template-rows: 10em 10em .5fr .5fr;
+  min-height: 100vh;
+  grid-template-columns: 10em 1fr 5em;
+  grid-template-areas: "top-left main main"
+                        "mid-left main main"
+                        "bot-left bot-mid bot-rt-top"
+                        "bot-left bot-mid bot-rt-bot";
+  width: 60%;
+  grid-gap: 0.5em;
+}
+
+.top-left {
+  grid-area: top-left;
+  background-color: beige;
+}
+.main {
+  grid-area: main;
+  background-color: maroon;
+}
+.mid-left {
+  grid-area: mid-left;
+  background-color: beige;
+}
+.bot-left {
+  grid-area: bot-left;
+  background-color: navy;
+}
+.bot-mid {
+  grid-area: bot-mid;
+  background-color: beige;
+}
+.bot-rt-top {
+  grid-area: bot-rt-top;
+  background-color: beige;
+}
+.bot-rt-bot {
+  grid-area: bot-rt-bot;
+  background-color: yellow;
+}

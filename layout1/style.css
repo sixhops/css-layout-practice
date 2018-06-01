@@ -11,8 +11,7 @@ body {
   margin: auto;
   min-height: 75vh;
   display: grid;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+  grid-gap: 1em;
   grid-template-rows: 100%;
   grid-template-columns: 1fr 8em;
   grid-template-areas: "left right";
@@ -23,8 +22,7 @@ body {
 #left {
   grid-area: left;
   display: grid;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+  grid-gap: 1em;
   grid-template-rows: 1fr 9em;
   grid-template-columns: 100%;
   grid-template-areas: "l-top"
@@ -33,8 +31,7 @@ body {
 #right {
   grid-area: right;
   display: grid;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+  grid-gap: 1em;
   grid-template-rows: 9em 1fr 2em;
   grid-template-columns: 100%;
   grid-template-areas: "r-top"
@@ -58,8 +55,7 @@ body {
 #l-top {
   grid-area: l-top;
   display: grid;
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+  grid-gap: 1em;
   grid-template-rows: 4em 0.5fr 0.5fr;
   grid-template-columns: 2em 0.5fr 0.5fr;
   grid-template-areas: "lt-topleft lt-topleft lt-topright"
