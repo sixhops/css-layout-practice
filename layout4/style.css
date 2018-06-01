@@ -1,3 +1,65 @@
-h1 {
-  color: rebeccapurple;
+
+
+body {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    grid-template-rows: 150px 250px 50px 50px;
+    grid-template-columns: 100px 350px 50px;
+    max-height: 500vh;
+    border: 2px solid black;
+
+    grid-template-areas: "a b b"
+                          "c b b"
+                          "d e f"
+                          "d e g";
+}
+
+.a {
+  grid-area: a;
+  background-color: ivory;
+  border: 3px solid black;
+}
+
+.b {
+  grid-area: b;
+  background-color: darkred;
+  border: 3px solid black;
+
+}
+
+.c {
+  grid-area: c;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.d {
+  grid-area: d;
+  background-color: darkblue;
+  border: 3px solid black;
+
+}
+
+.e {
+  grid-area: e;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.f {
+  grid-area: f;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.g {
+  grid-area: g;
+  background-color: goldenrod;
+  border: 3px solid black;
+
 }

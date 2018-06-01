@@ -1,3 +1,95 @@
-h1 {
-  color: rebeccapurple;
+
+
+body {
+    display: grid;
+    width: 500px;
+    height: 800px;
+    margin: auto;
+    grid-template-rows: 50px 400px 100px 50px 100px 100px;
+    grid-template-columns: 50px 75px 275px 75px 25px;
+    max-height: 800vh;
+    border: 2px solid black;
+
+    grid-template-areas: "a a b b b"
+                          "c c b b b"
+                          "c c d d e"
+                          "h g f f e"
+                          "i g f f e"
+                          "i g j k k";
+}
+
+.a {
+  grid-area: a;
+  background-color: black;
+  border: 3px solid black;
+}
+
+.b {
+  grid-area: b;
+  background-color: red;
+  border: 3px solid black;
+
+}
+
+.c {
+  grid-area: c;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.d {
+  grid-area: d;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.e {
+  grid-area: e;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.f {
+  grid-area: f;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.g {
+  grid-area: g;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.h {
+  grid-area: h;
+  background-color: black;
+  border: 3px solid black;
+
+}
+
+.i {
+  grid-area: i;
+  background-color: yellow;
+  border: 3px solid black;
+
+}
+
+.j {
+  grid-area: j;
+  background-color: ivory;
+  border: 3px solid black;
+
+}
+
+.k {
+  grid-area: k;
+  background-color: darkblue;
+  border: 3px solid black;
+
 }
