@@ -1,3 +1,51 @@
-h1 {
-  color: rebeccapurple;
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 13em 13em .5fr .5fr;
+  min-height: 75vh;
+  grid-template-columns: 8em 1fr 2em;
+  grid-template-areas:
+                       "topleft bigred bigred"
+                       "midleft bigred bigred"
+                       "bottomleft bottommid brt"
+                       "bottomleft bottommid brb";
+  height: 500px;
+  background-color: black;
+  width: 40%;
 }
+
+.topleft {
+  grid-area: topleft;
+  background-color: beige;
+}
+
+.bigred {
+  grid-area: bigred;
+  background-color: darkred;
+}
+
+.midleft {
+  grid-area: midleft;
+  background-color: beige;
+}
+
+.bottomleft {
+	grid-area: bottomleft;
+  background-color: darkblue;
+}
+
+.bottommid {
+  grid-area: bottommid;
+  background-color: beige;
+}
+
+.brt {
+  grid-area: brt;
+  background-color: beige;
+}
+
+.brb {
+  grid-area: brb;
+	background-color: gold;
+}
+

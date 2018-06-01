@@ -1,3 +1,90 @@
-h1 {
-  color: rebeccapurple;
+.container {
+	width: 800px;
+	margin: auto;
+    height: 1000px;
 }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px solid black;
+}
+
+footer {
+  width: 100%;
+  height: 20%;
+  color: white;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+  border-top: 10px solid black;
+}
+
+main {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+section {
+  width: 200px;
+  height: 20 px;
+  line-height: 100px;
+  background: lightgray;
+}
+
+.top {
+  width: 300px;
+  border-right: 15px solid black;
+}
+
+.middle {
+    background-color: lightyellow;
+}
+
+.center {
+	border: 15px solid black;
+	height: 500px;
+	width: 150px;
+}
+
+.left {
+  background-color: blue;
+  width: 50px;
+  border-right: 10px solid black;
+}
+
+.bottom {
+  width: 680px;
+}
+
+.right {
+  background-color: black;
+  height: 300px;
+  width: 180px;
+}
+
+.foot { 
+  height: 200px;
+  background-color: lightgray;
+} 
+
+.red {
+  background-color: red;
+  width: 225px;
+  height: 50px;
+  border-left: 15px solid black;
+}
+
