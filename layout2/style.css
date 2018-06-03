@@ -1,3 +1,69 @@
-h1 {
-  color: rebeccapurple;
+#container {
+width: 50%;
+margin: auto;
+min-height: 75vh;
+display: grid;
+grid-gap: 1em;
+border: 1px solid black;
+grid-template-rows: 100%;
+grid-template-columns: 1fr 6em;
+grid-template-areas: "left" "right";
+background-color: black;
+}
+
+
+#left {
+  display: grid;
+  grid-area: left;
+  grid-template-rows: 50em 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  grid-template-areas: "l-top" "l-bottom";
+}
+
+#right {
+  display: grid;
+  grid-area: right;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 100%;
+  grid-template-areas: "r-top" "r-mid" "r-bottom";
+}
+
+#l-top {
+  grid-area: l-top;
+  grid-template-areas: "lt-top" "lt-bottom";
+  background-color: black;
+
+} #l-bottom {
+  grid-area: l-bottom;
+  grid-template-areas: "lb-top-left" "lb-bottom-left" "lb-right";
+  background-color: gray;
+}
+
+#r-top {
+  grid-area: r-top;
+  background-color: red;
+
+}
+#r-mid {
+  grid-area: r-mid;
+  grid-template-areas: "rm-top-left" "rm-bottom-left" "rm-right";
+  background-color: gray;
+
+}
+
+#r-bottom {
+  grid-area: r-bottom;
+  grid-template-areas: "rb-right" "rb-left";
+  background-color:
+}
+
+#rb-right {
+  grid-area: rb-right;
+  background-color: blue;
+
+}
+#rb-left {
+  grid-area: rb-left;
+  background-color: gray;
+
 }
