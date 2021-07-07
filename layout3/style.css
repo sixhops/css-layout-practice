@@ -1,3 +1,55 @@
-h1 {
-  color: rebeccapurple;
+
+.whole {
+  min-height: 75vh;
+  display: grid;
+  width: 35em;
+  grid-gap: .5em;
+  background-color: black;
+  grid-template-columns: 5em .4fr .6fr 5em;
+  grid-template-rows: .5fr .5fr 10em 1.5em;
+  grid-template-areas: "topleft topleft topright topright"
+                       "midleft midleft midright midright"
+                       "bottomlefty bottomleftw bottomrightb bottomrightg"
+                       "bottomlefty bottomleftw bottombottomright bottomrightg";
+}
+
+
+
+
+.topleft {
+	grid-area: topleft;
+	background-color: red;
+}
+.topright{
+	grid-area: topright;
+	background-color: lightgrey;
+}
+.midleft {
+	grid-area: midleft;
+	background-color: lightgray;
+}
+.midright {
+	grid-area: midright;
+	background-color: lightgrey;
+}
+.bottomlefty {
+	grid-area: bottomlefty;
+	background-color: yellow;
+}
+.bottomleftw {
+	grid-area: bottomleftw;
+	background-color: lightgrey;
+}
+
+.bottomrightb {
+	grid-area: bottomrightb;
+	background-color: blue;
+}
+.bottomrightg {
+	grid-area: bottomrightg;
+	background-color: lightgray;
+}
+.bottombottomright {
+	grid-area: bottombottomright;
+	background-color: lightgrey;
 }

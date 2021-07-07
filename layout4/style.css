@@ -1,3 +1,76 @@
-h1 {
-  color: rebeccapurple;
+.whole {
+  /*margin: auto;*/
+  min-height: 75vh;
+  display: grid;
+  width: 50%;
+  grid-gap: 1em;
+  background-color: black;
+  grid-template-columns: 7em 1fr 5em;
+  grid-template-rows: 13em 13em .5fr .5fr;
+  grid-template-areas: "topleft righ righ"
+                       "midleft righ righ"
+                       "botleft midbot botrighttop"
+                       "botleft midbot botrightbot";
 }
+
+/*.top{
+  grid-area: tp;
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "topleft righ"
+                        "midleft righ";
+}
+*/
+.topleft {
+  grid-area: topleft;
+  background-color: cornsilk;
+/*  display: grid;
+  grid-template-rows: 300px 1fr;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "topleft righ"
+                        "midleft righ";*/
+
+
+}
+.midleft {
+  grid-area: midleft;
+  background-color: cornsilk;
+
+
+
+}
+.right {
+  grid-area: righ;
+  background-color: red;
+}
+/*.bottom {
+  grid-area: bot;
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "botleft midbot";*/
+
+.botleft {
+  grid-area: botleft;
+  background-color: blue;
+}
+.midbot {
+  grid-area: midbot;
+  background-color: cornsilk;
+/*  display: grid;
+  grid-template-rows: 300px .5fr;
+  grid-template-columns: 1fr 20px;
+  grid-template-areas: "midbot botrighttop"
+                        "midbot botrightbot"*/
+}
+.botrighttop {
+  grid-area:botrighttop;
+  background-color: cornsilk;
+}
+.botrightbot {
+  grid-area: botrightbot;
+  background-color: yellow;
+}
+
