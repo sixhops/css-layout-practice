@@ -1,3 +1,96 @@
-h1 {
-  color: rebeccapurple;
+body {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  width: 50%;
+  min-height: 75vh;
+  grid-row-gap: .6em;
+  grid-template-rows: .6fr .4fr;
+  background-color: black;
+  grid-template-columns: 100%;
+  grid-template-areas: "top"
+                       "bottom";
+}
+
+/* TOP SECTION */
+
+.top {
+  display: grid;
+  grid-area: top;
+  grid-row-gap: .6em;
+  grid-column-gap: .6em;
+  grid-template-rows: .15fr .55fr .3fr;
+  grid-template-columns: .25fr .75fr;
+  background-color: black;
+  grid-template-areas: "t-black t-red"
+                       "t-gray t-red"
+                       "t-gray t-gray2";
+}
+
+.t-black {
+	grid-area: t-black;
+	background-color: black;
+}
+
+.t-red {
+	grid-area: t-red;
+	background-color: #BF2007;
+}
+
+.t-gray {
+	grid-area: t-gray;
+	background-color: #DFE3DC;
+}
+
+.t-gray2 {
+	grid-area: t-gray2;
+	background-color: #B2B5BD;
+}
+
+
+/* BOTTOM SECTION */
+
+.bottom {
+  display: grid;
+  grid-area: bottom;
+  grid-gap: .6em;
+  grid-template-rows: .15fr .35fr .5fr;
+  grid-template-columns: .1fr .14fr .56fr .2fr;
+  grid-template-areas: "b-black b-gray b-gray2 b-gray2"
+                       "b-yellow b-gray b-gray2 b-gray2"
+                       "b-yellow b-gray b-offwhite b-blue";
+}
+
+.b-black {
+	grid-area: b-black;
+	background-color: black;
+}
+
+.b-yellow {
+	grid-area: b-yellow;
+	background-color: yellow;
+}
+
+.b-gray {
+	grid-area: b-gray;
+	background-color: #B2B5BD;
+}
+
+.b-gray2 {
+	grid-area: b-gray2;
+	background-color: #B2B5BD;
+}
+
+.b-offwhite {
+	grid-area: b-offwhite;
+	background-color: #DFE3DC;
+}
+
+.b-blue {
+	grid-area: b-blue;
+	background-color: #001661;
 }
